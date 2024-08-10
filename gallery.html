@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #f1f1f1;
+      font-family: 'Arial', sans-serif;
+    }
+  
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #333333;
+      border: none;
+    }
+    
+    .content {
+      padding: 40px;
+    }
+    
+    .content h1 {
+      color: #ff9800;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    
+    .gallery-item {
+      width: 30%;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .gallery-item .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: .5s ease;
+    }
+    
+    .gallery-item:hover .overlay {
+      height: 100%;
+    }
+    
+    .overlay-text {
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333333;
+      color: #f1f1f1;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+      .gallery-item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">@runa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="content container-fluid">    
+  <h1>Gallery</h1>
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="cardano-blockchain-platform_23-2150411956.avif" alt="Artificial Intelligence">
+      <div class="overlay">
+        <div class="overlay-text">
+          <a href="https://www.example.com/ai" target="_blank">Explore AI</a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="techtrends-hero-desktop.webp" alt="Blockchain Technology">
+      <div class="overlay">
+        <div class="overlay-text">
+          <a href="https://www.example.com/blockchain" target="_blank">Learn Blockchain</a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="ai-technology-microchip-background-digital-transformation-concept_53876-124669.avif" alt="Cloud Computing">
+      <div class="overlay">
+        <div class="overlay-text">
+          <a href="https://www.example.com/cloud" target="_blank">Cloud Computing</a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="5-of-the-Most-Important-Tech-Trends-in-2018.jpg" alt="Internet of Things">
+      <div class="overlay">
+        <div class="overlay-text">
+          <a href="https://www.example.com/iot" target="_blank">Explore IoT</a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="200702-semiconductorchip-stock.jpg" alt="Cybersecurity">
+      <div class="overlay">
+        <div class="overlay-text">
+          <a href="https://www.example.com/cybersecurity" target="_blank">Learn Cybersecurity</a>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-item">
+      <img src="360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg" alt="Virtual Reality">
+      <div class="overlay">
+        <div class="overlay-text">
+          <a href="https://www.example.com/vr" target="_blank">Virtual Reality</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&copy; 2024 Aruna Madhushanka. All rights reserved.</p>
+  <p>No 148/C Rosvill place, Kelaniya, Sri Lanka | E mail : aruna96366@gmail.com</p>
+  <p>
+    <a href="#">Privacy Policy</a> | 
+    <a href="#">Terms of Service</a>
+  </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #f1f1f1;
+      font-family: 'Arial', sans-serif;
+    }
+  
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #333333;
+      border: none;
+    }
+    
+    .sidenav {
+      padding-top: 20px;
+      background-color: #222222;
+      height: 100%;
+    }
+    
+    footer {
+      background-color: #333333;
+      color: #f1f1f1;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .content {
+      padding: 40px;
+    }
+    
+    .content h1 {
+      color: #ff9800;
+    }
+    
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    
+    .img-responsive {
+      margin: 20px 0;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+      background-color: #333333;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    
+    .contact-form h2 {
+      color: #ff9800;
+      margin-bottom: 20px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #555555;
+      background-color: #222222;
+      color: #f1f1f1;
+    }
+    
+    .contact-form input[type="submit"] {
+      background-color: #ff9800;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .contact-form input[type="submit"]:hover {
+      background-color: #e68900;
+    }
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {
+        height: auto; 
+      }
+      footer {
+        position: relative;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">@runa</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="content container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-8 col-sm-offset-2 text-left"> 
+      <h1>Welcome</h1>
+      <p>Experienced Marketing and Key Account Management professional with a strong background in the FMCG and food & beverages industry. Skilled in Sales, Marketing, Branding, Account Management, and Pricing. I hold a Master of Information Technology and a Bachelor's of Business Management from the University of Kelaniya. Dynamic and self-motivated, I am passionate about driving growth and delivering results. Let's connect!</p>
+      <hr>
+      <img src="thota.jpg" class="img-responsive" style="width:20%" alt="Image">
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<br> 
+
+<p>                                                                                                                                                                                <p>
+<br>
+<br>
+<br>
+<footer class="container-fluid text-center">
+  <p>&copy; 2024 Aruna Madhushanka. All rights reserved.</p>
+  <p>No 148/C Rosvill place, Kelaniya, Sri Lanka | E mail : aruna96366@gmail.com</p>
+  <p>
+    <a href="#">Privacy Policy</a> | 
+    <a href="#">Terms of Service</a>
+  </p>
+</footer>
+
+</body>
+</html>
